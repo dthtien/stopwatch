@@ -3,7 +3,7 @@
 }
 
 .App-logo {
-  height: 40vmin;
+  height: 10vmin;
   pointer-events: none;
 }
 
@@ -14,7 +14,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: black;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -35,4 +35,15 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+button {
+  background-color: #6b50fe;
+  color: white;
+  padding: 11px 20px;
+  margin-right: 10px;
+  margin-top: 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
 }
