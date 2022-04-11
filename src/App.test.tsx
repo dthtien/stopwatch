@@ -9,11 +9,11 @@ test('renders correctly', () => {
   expect(getByText('00:00:00:000')).toBeVisible();
   expect(getByText('Start')).toBeVisible();
 
-  // Running
+  // Running...
   fireEvent.click(getByText('Start'));
   expect(queryByText('00:00:00:000')).not.toBeInTheDocument();
   expect(queryByText('Start')).not.toBeInTheDocument();
-  expect(getByText('Running')).toBeVisible();
+  expect(getByText('Running...')).toBeVisible();
   expect(getByText('Stop')).toBeVisible();
   expect(getByText('Lap')).toBeVisible();
 
@@ -26,13 +26,13 @@ test('renders correctly', () => {
   expect(getByTestId('lap-2')).toBeVisible();
   fireEvent.click(getByText('Stop'));
 
-  expect(queryByText('Running')).not.toBeInTheDocument();
-  expect(getByText('Paused')).toBeVisible();
+  expect(queryByText('Running...')).not.toBeInTheDocument();
+  expect(getByText('Stopped')).toBeVisible();
   expect(getByText('Resume')).toBeVisible();
   expect(getByText('Reset')).toBeVisible();
 
   fireEvent.click(getByText('Resume'));
-  expect(getByText('Running')).toBeVisible();
+  expect(getByText('Running...')).toBeVisible();
   expect(queryByText('Resume')).not.toBeInTheDocument();
   expect(queryByText('Reset')).not.toBeInTheDocument();
 
