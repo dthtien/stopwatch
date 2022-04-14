@@ -1,3 +1,6 @@
+Principles and Design Patterns of React Programming - batch01 - Tháng 4, 2022 -  Team 10
+
+
 ## Stop Watch App with Laps
   - Demo: https://dstopwatch.vercel.app/
 ## Available Scripts
